@@ -110,6 +110,9 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header--border-botton {
@@ -123,23 +126,11 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-
-*.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-*.header__firtspart-logo {
+.header__firtspart-logo {
   color: #2196f3;
 }
-*.header__secondpart-logo {
+.header__secondpart-logo {
   color: #000000;
 }
 
@@ -180,9 +171,9 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 767px) {
@@ -297,7 +288,7 @@ input {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav .site-nav__link {
     padding-bottom: 32px;
     padding-top: 32px;
@@ -364,6 +355,18 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__item:last-child {
+    margin-right: 96px;
+  }
+}
+
 .site-info {
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -379,12 +382,17 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
 }
 @media screen and (max-width: 767px) {
   .site-info {
     margin-top: 306px;
     margin-bottom: 64px;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-info {
+    margin-top: 21px;
   }
 }
 .site-info__link {
@@ -1325,7 +1333,7 @@ input {
   margin-right: 10px;
 }
 
-*.header__firtspart-logo, *.header__secondpart-logo, .address-container__firtspart-logo, .address-container__secondpart-logo {
+.header__firtspart-logo, .header__secondpart-logo, .address-container__firtspart-logo, .address-container__secondpart-logo {
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;

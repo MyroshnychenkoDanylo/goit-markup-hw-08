@@ -1,16 +1,9 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header--border-botton {
   border-bottom: 1px solid #ececec;
 }
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
