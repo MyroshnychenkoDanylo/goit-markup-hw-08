@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./сss/sprite.css" />
   </head>
   <body class="page">
     <header>
@@ -58,18 +57,28 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false "
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобыльного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_open"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-menu_close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
           <button type="button" class="hero__btn button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
-
-      <section class="section description">
+      </section>-->
+      <!--<section class="section description">
         <div class="container">
           <h2 class="hidden">Iнформація</h2>
           <ul class="list-feature">
@@ -119,8 +128,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section deals">
+      </section>-->
+      <!--<section class="section deals">
         <div class="container">
           <h2 class="deals__title">Чим ми займаємося</h2>
           <ul class="deals-list">
@@ -148,8 +157,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section team">
+      </section>-->
+      <!--<section class="section team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list-team">
@@ -279,8 +288,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section regular-customers">
+      </section>-->
+      <!--<section class="section regular-customers">
         <div class="container">
           <h2 class="regular-customers__title">Постійні клієнти</h2>
           <ul class="customers customers--mt">
@@ -322,10 +331,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container--footer container">
         <div class="address-container">
           <a href="#" lang="en" class="address-container__firtspart-logo">
@@ -389,7 +398,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer>-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
@@ -446,5 +455,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
