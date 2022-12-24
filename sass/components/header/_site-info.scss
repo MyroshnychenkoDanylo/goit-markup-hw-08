@@ -4,13 +4,25 @@
   font-size: 14px;
   line-height: 1.14;
   list-style: none;
+  text-decoration: none;
+  color: $add-color;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 306px;
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    list-style: none;
+    letter-spacing: 0.02em;
+  }
 
   &__link {
     color: $primary-text-color;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 1200px) {
       &__item {
         margin-bottom: 32px;
       }
@@ -46,3 +58,24 @@
     }
   }
 }
+.contact__link--mail {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+}
+
+.mobile-menu {
+  text-decoration: none;
+  display: flex;
+
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 0 10px;
+  }
+}
+
+.contact__link{}
