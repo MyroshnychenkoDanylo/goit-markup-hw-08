@@ -4,26 +4,39 @@
 }
 
 .regular-customers__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
   &--mt {
     margin-top: 50px;
   }
 
   &__link {
-    width: 170px;
     height: 92px;
-  }
-
-  &__link:not(:last-child) {
-    margin-right: 30px;
+    width: 210px;
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__company {
