@@ -47,7 +47,6 @@
 .menu-container {
   @media (min-width: 768px) {
     display: flex;
-    align-items: center;
   }
 
   @media (max-width: 767px) {
@@ -103,6 +102,7 @@
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 
@@ -116,6 +116,13 @@
   @media screen and (max-width: 767px) {
     flex-direction: column;
     padding-top: 20px;
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__item {
@@ -142,7 +149,7 @@
     }
   }
 
-  .site-nav__link {
+  &__link {
     color: $tittle-text-color;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -239,7 +246,13 @@
 }
 
 .site-nav__item:last-child {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 96px;
+  }
+}
+
+.site-nav__item:last-child {
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
   }
 }
