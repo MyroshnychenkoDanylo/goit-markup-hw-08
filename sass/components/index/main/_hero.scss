@@ -3,16 +3,44 @@
   letter-spacing: 0.06em;
   text-align: center;
   margin-top: 0;
-  padding-bottom: 200px;
-  padding-top: 200px;
-
-  background-color: $hero-section-bgcolor;
-  background-image: url(../images/hero-bg.jpg),
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  height: 600px;
-  max-width: 1600px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
+  background-color: $hero-section-bgcolor;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/hero-tel-1x.jpg),
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+  @include retina {
+    background-image: url(../images/hero-tel-2x.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-tablet.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    @include retina {
+      background-image: url(../images/hero-tablet-2x.jpg),
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+    
+    background-image: url(../images/hero-desktop.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    @include retina {
+      background-image: url(../images/hero-desktop-2x.jpg),
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+  }
 
   &__title {
     color: $hero-title-color;
