@@ -1,5 +1,7 @@
 .footer-form {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form-text {
@@ -9,16 +11,29 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-form-footer-color;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .form-email {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 .email-input {
+  width: 450px;
   line-height: 30px;
-  width: 358px;
   height: 50px;
   padding: 15px 0px 15px 16px;
   border-radius: 4px;
@@ -26,16 +41,29 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   color: $input-email-footer;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .form-btn {
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
-  margin-left: 12px;
+
   padding-right: 28px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .icon-email {
