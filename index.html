@@ -169,7 +169,41 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list-team">
             <li class="card card--right">
-              <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    /images/Product-Designer-desktop-1x.jpg 1x,
+                    /images/Product-Designer-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:1200px) 1200px, 25vw"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    /images/Product-Designer-tablet-1x.jpg 1x,
+                    /images/Product-Designer-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  sizes="(min-width:768px) 768px, 50vw"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    /images/Product-Designer-tel-1x.jpg 1x,
+                    /images/Product-Designer-tel-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                  sizes="(min-width:480px) 480px, 100vw"
+                  type="image/jpg"
+                />
+
+                <source />
+                <img src="./images/img4.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+
               <h3 class="card__title">Ігор Дем'яненко</h3>
               <p class="card__text">Product Designer</p>
               <ul class="card-links links-team">
@@ -200,7 +234,41 @@
               </ul>
             </li>
             <li class="card card--right">
-              <img src="./images/img5.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    /images/Product-Designer-desktop-1x.jpg 1x,
+                    /images/Product-Designer-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:1200px) 1200px, 25vw"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    /images/Frontend Developer-tablet-1x.jpg 1x,
+                    /images/Frontend Developer-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  sizes="(min-width:768px) 768px, 50vw"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    /images/Frontend Developer-tel-1x.jpg 1x,
+                    /images/Frontend Developer-tel-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                  sizes="(min-width:480px) 480px, 100vw"
+                  type="image/jpg"
+                />
+                <source />
+
+                <img src="./images/img5.jpg" alt="Ольга Рєпіна" />
+              </picture>
+
               <h3 class="card__title">Ольга Рєпіна</h3>
               <p class="card__text">Frontend Developer</p>
               <ul class="card-links links-team">

@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
   padding-inline-start: 0;
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -35,6 +34,10 @@
     font-size: 14px;
     line-height: 1.71;
     margin-top: 10px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
   }
 }
 
