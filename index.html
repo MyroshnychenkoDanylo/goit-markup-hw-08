@@ -175,11 +175,11 @@
               <a href="#" target="_blank">
                 <picture>
                   <source
-                    srcset="/images/desktop-1x.jpg 1x, /images/desktop-2x.jpg 2x"
+                    srcset="./images/desktop-1x.jpg 1x, ./images/desktop-2x.jpg 2x"
                     media="(min-width: 1200px)"
                     type="image/jpg"
                   />
-                  <img src="/images/desktop-1x.jpg" alt="Десктопні додатки" width="370" />
+                  <img src="./images/desktop-1x.jpg" alt="Десктопні додатки" width="370" />
                 </picture>
               </a>
               <div class="cover"><p class="cover__text">Десктопні додатки</p></div>
@@ -188,11 +188,11 @@
               <a href="#" target="_blank">
                 <picture>
                   <source
-                    srcset="/images/mobile-1x.jpg 1x, /images/mobile-2x.jpg 2x"
+                    srcset="./images/mobile-1x.jpg 1x, ./images/mobile-2x.jpg 2x"
                     media="(min-width: 1200px)"
                     type="image/jpg"
                   />
-                  <img src="/images/mobile-1x.jpg" alt="Мобільні додатки" width="370" />
+                  <img src="./images/mobile-1x.jpg" alt="Мобільні додатки" width="370" />
                 </picture>
               </a>
               <div class="cover">
@@ -203,11 +203,15 @@
               <a href="#" target="_blank">
                 <picture>
                   <source
-                    srcset="/images/tablet-1x.jpg 1x, /images/tablet-2x.jpg 2x"
+                    srcset="./images/tablet-1x.jpg 1x, ./images/tablet-2x.jpg 2x"
                     media="(min-width: 1200px)"
                     type="image/jpg"
                   />
-                  <img src="tablet-1x.jpg" alt="Дизайнерські рішення" width="370" /> </picture
+                  <img
+                    src="./images/tablet-1x.jpg"
+                    alt="Дизайнерські рішення"
+                    width="370"
+                  /> </picture
               ></a>
               <div class="cover">
                 <p class="cover__text">Дизайнерські рішення</p>
@@ -224,36 +228,31 @@
               <picture>
                 <source
                   srcset="
-                    /images/Product-Designer-desktop-1x.jpg 1x,
-                    /images/Product-Designer-desktop-2x.jpg 2x
+                    ./images/Product-Designer-tel-1x.jpg 1x,
+                    ./images/Product-Designer-tel-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/Product-Designer-tablet-1x.jpg 1x,
+                    ./images/Product-Designer-tablet-2x.jpg 2x
+                  "
+                  media="(max-width:1199px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/Product-Designer-desktop-1x.jpg 1x,
+                    ./images/Product-Designer-desktop-2x.jpg 2x
                   "
                   media="(min-width:1200px)"
-                  sizes="(min-width:1200px) 1200px, 25vw"
                   type="image/jpg"
                 />
 
-                <source
-                  srcset="
-                    /images/Product-Designer-tablet-1x.jpg 1x,
-                    /images/Product-Designer-tablet-2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                  sizes="(min-width:768px) 768px, 50vw"
-                  type="image/jpg"
-                />
-
-                <source
-                  srcset="
-                    /images/Product-Designer-tel-1x.jpg 1x,
-                    /images/Product-Designer-tel-2x.jpg 2x
-                  "
-                  media="(min-width:480px)"
-                  sizes="(min-width:480px) 480px, 100vw"
-                  type="image/jpg"
-                />
-
-                <source />
-                <img src="/images/Product-Designer-desktop-1x.jpg" alt="Ігор Дем'яненко" />
+                <img src="./images/Product-Designer-desktop-1x.jpg" alt="Ігор Дем'яненко" />
               </picture>
 
               <h3 class="card__title">Ігор Дем'яненко</h3>
@@ -289,34 +288,29 @@
               <picture>
                 <source
                   srcset="
-                    /images/Frontend-Developer-desktop-1x.jpg 1x,
-                    /images/Frontend-Developer-desktop-2x.jpg 2x
+                    /images/Frontend-Developer-tel-1x.jpg 1x,
+                    /images/Frontend-Developer-tel-2x.jpg 2x
                   "
-                  media="(min-width:1200px)"
-                  sizes="(min-width:1200px) 1200px, 25vw"
+                  media="(max-width:767px)"
                   type="image/jpg"
                 />
-
                 <source
                   srcset="
                     /images/Frontend-Developer-tablet-1x.jpg 1x,
                     /images/Frontend-Developer-tablet-2x.jpg 2x
                   "
-                  media="(min-width:768px)"
-                  sizes="(min-width:768px) 768px, 50vw"
+                  media="(max-width:1199px)"
                   type="image/jpg"
                 />
 
                 <source
                   srcset="
-                    /images/Frontend-Developer-tel-1x.jpg 1x,
-                    /images/Frontend-Developer-tel-2x.jpg 2x
+                    /images/Frontend-Developer-desktop-1x.jpg 1x,
+                    /images/Frontend-Developer-desktop-2x.jpg 2x
                   "
-                  media="(min-width:480px)"
-                  sizes="(min-width:480px) 480px, 100vw"
+                  media="(min-width:1200px)"
                   type="image/jpg"
                 />
-                <source />
 
                 <img src="/images/Frontend-Developer-desktop-1x.jpg" alt="Ольга Рєпіна" />
               </picture>
@@ -353,26 +347,21 @@
             <li class="card card--right">
               <picture>
                 <source
-                  srcset="/images/Marketing-desktop-1x.jpg 1x, /images/Marketing-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
-                  sizes="(min-width:1200px) 1200px, 25vw"
+                  srcset="/images/Marketing-tel-1x.jpg 1x, /images/Marketing-tel-2x.jpg 2x"
+                  media="(max-width:767px)"
                   type="image/jpg"
                 />
-
                 <source
                   srcset="/images/Marketing-tablet-1x.jpg 1x, /images/Marketing-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
-                  sizes="(min-width:768px) 768px, 50vw"
+                  media="(max-width:1199px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="/images/Marketing-desktop-1x.jpg 1x, /images/Marketing-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
                   type="image/jpg"
                 />
 
-                <source
-                  srcset="/images/Marketing-tel-1x.jpg 1x, /images/Marketing-tel-2x.jpg 2x"
-                  media="(min-width:480px)"
-                  sizes="(min-width:480px) 480px, 100vw"
-                  type="image/jpg"
-                />
-                <source />
                 <img src="/images/Marketing-desktop-1x.jpg" alt="Микола Тарасов" />
               </picture>
 
@@ -408,26 +397,21 @@
             <li class="card card--right">
               <picture>
                 <source
-                  srcset="/images/UI-desktop-1x.jpg 1x, /images/UI-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
-                  sizes="(min-width:1200px) 1200px, 25vw"
+                  srcset="/images/UI-tel-1x.jpg 1x, /images/UI-tel-2x.jpg 2x"
+                  media="(max-width:767px)"
                   type="image/jpg"
                 />
-
                 <source
                   srcset="/images/UI-tablet-1x.jpg 1x, /images/UI-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
-                  sizes="(min-width:768px) 768px, 50vw"
+                  media="(max-width:1199px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="/images/UI-desktop-1x.jpg 1x, /images/UI-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
                   type="image/jpg"
                 />
 
-                <source
-                  srcset="/images/UI-tel-1x.jpg 1x, /images/UI-tel-2x.jpg 2x"
-                  media="(min-width:480px)"
-                  sizes="(min-width:480px) 480px, 100vw"
-                  type="image/jpg"
-                />
-                <source />
                 <img src="/images/UI-desktop-1x.jpg" alt="Михайло Єрмаков" />
               </picture>
 
