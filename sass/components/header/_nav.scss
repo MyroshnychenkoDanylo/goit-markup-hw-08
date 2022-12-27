@@ -170,7 +170,7 @@
       color: $add-color;
     }
     &--current::after {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1200px) {
         content: '';
         position: absolute;
         background-color: $add-color;
@@ -188,7 +188,7 @@
     }
 
     &--underline:hover::after {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1200px) {
         content: '';
         position: absolute;
         background: $add-color;
