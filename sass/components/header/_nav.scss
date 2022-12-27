@@ -181,14 +181,14 @@
         left: 0;
       }
 
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 767px) {
         width: 0;
         height: 0;
       }
     }
 
     &--underline:hover::after {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
         content: '';
         position: absolute;
         background: $add-color;
