@@ -125,6 +125,7 @@
     @media screen and (min-width: 768px) {
       padding-top: 32px;
       padding-bottom: 32px;
+      position: relative;
     }
   }
 
@@ -170,7 +171,8 @@
       color: $add-color;
     }
     &--current::after {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
+        display: block;
         content: '';
         position: absolute;
         background-color: $add-color;
