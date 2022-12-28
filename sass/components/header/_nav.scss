@@ -112,13 +112,18 @@
 .site-nav {
   @extend %site-nav-info;
   display: flex;
-  @media screen and (min-width: 1200px) {
-    align-items: center;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
   }
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
   }
 
   &__item {
