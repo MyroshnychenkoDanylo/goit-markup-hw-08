@@ -173,14 +173,14 @@ input {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: fixed;
@@ -212,7 +212,16 @@ input {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-mobile {
@@ -419,7 +428,6 @@ input {
 }
 @media screen and (max-width: 767px) {
   .site-info {
-    margin-top: 306px;
     margin-bottom: 64px;
     gap: 32px;
   }
